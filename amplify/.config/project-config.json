@@ -1,0 +1,20 @@
+{
+    "projectName": "sparkadmin",
+    "projectPath": "C:\\dev\\repos\\sparkdallas\\sparkadmin",
+    "defaultEditor": "code",
+    "frontendHandler": {
+        "javascript": "C:\\Users\\sdesaraj\\AppData\\Roaming\\npm\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-frontend-javascript"
+    },
+    "javascript": {
+        "framework": "angular",
+        "config": {
+            "SourceDir": "src",
+            "DistributionDir": "dist",
+            "BuildCommand": "npm.cmd run-script build",
+            "StartCommand": "ng serve"
+        }
+    },
+    "providers": {
+        "awscloudformation": "C:\\Users\\sdesaraj\\AppData\\Roaming\\npm\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-provider-awscloudformation"
+    }
+}

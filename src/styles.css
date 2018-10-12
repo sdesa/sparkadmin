@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../node_modules/aws-amplify-angular/theme.css';
+
+.amplify-container {
+    padding-bottom: 5em;
+}

@@ -1,0 +1,55 @@
+{
+    "userPoolName": "sparkadminb7f35932_userpool_b7f35932",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "sparkadmincognito_sns-role",
+    "roleExternalId": "sparkadmincognito_role_external_id",
+    "policyName": "sparkadmincognito-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [
+        "Requires Lowercase",
+        "Requires Uppercase",
+        "Requires Numbers",
+        "Requires Symbols"
+    ],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "sparkadmincognito_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "sparkadmincognito_totp_lambda_role",
+    "mfaLambdaLogPolicy": "sparkadmincognito_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "sparkadmincognito_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "sparkadmincognito_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "sparkadmincognito_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "sparkadmincognito_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "sparkadmincognito_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": true,
+    "useDefault": "manual",
+    "authSelections": "userPoolOnly",
+    "resourceName": "sparkadmincognito",
+    "userpoolClientWriteAttributes": [
+        "family_name",
+        "given_name",
+        "phone_number",
+        "email"
+    ],
+    "unAuthRoleName": "sparkadmin-20181011132716-unauthRole",
+    "authRoleName": "sparkadmin-20181011132716-authRole",
+    "unAuthRoleArn": "arn:aws:iam::849422063466:role/sparkadmin-20181011132716-unauthRole",
+    "authRoleArn": "arn:aws:iam::849422063466:role/sparkadmin-20181011132716-authRole"
+}

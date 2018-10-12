@@ -1,0 +1,7 @@
+{
+    "tableName": "games",
+    "partitionKeyName": "GameID",
+    "partitionKeyType": "N",
+    "sortKeyName": "GameName",
+    "sortKeyType": "S"
+}

@@ -1,0 +1,26 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "sparkadmin-20181011132716-authRole",
+			"UnauthRoleArn": "arn:aws:iam::849422063466:role/sparkadmin-20181011132716-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::849422063466:role/sparkadmin-20181011132716-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "sparkadmin-20181011132716-deployment",
+			"UnauthRoleName": "sparkadmin-20181011132716-unauthRole",
+			"StackName": "sparkadmin-20181011132716",
+			"StackId": "arn:aws:cloudformation:us-east-1:849422063466:stack/sparkadmin-20181011132716/483d58f0-cd83-11e8-8265-50d501eed2b3"
+		}
+	},
+	"auth": {
+		"sparkadmincognito": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation"
+		}
+	},
+	"storage": {
+		"sparkdynamodb": {
+			"service": "DynamoDB",
+			"providerPlugin": "awscloudformation"
+		}
+	}
+}
