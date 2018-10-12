@@ -1,26 +1,52 @@
 {
-	"providers": {
-		"awscloudformation": {
-			"AuthRoleName": "sparkadmin-20181011132716-authRole",
-			"UnauthRoleArn": "arn:aws:iam::849422063466:role/sparkadmin-20181011132716-unauthRole",
-			"AuthRoleArn": "arn:aws:iam::849422063466:role/sparkadmin-20181011132716-authRole",
-			"Region": "us-east-1",
-			"DeploymentBucketName": "sparkadmin-20181011132716-deployment",
-			"UnauthRoleName": "sparkadmin-20181011132716-unauthRole",
-			"StackName": "sparkadmin-20181011132716",
-			"StackId": "arn:aws:cloudformation:us-east-1:849422063466:stack/sparkadmin-20181011132716/483d58f0-cd83-11e8-8265-50d501eed2b3"
-		}
-	},
-	"auth": {
-		"sparkadmincognito": {
-			"service": "Cognito",
-			"providerPlugin": "awscloudformation"
-		}
-	},
-	"storage": {
-		"sparkdynamodb": {
-			"service": "DynamoDB",
-			"providerPlugin": "awscloudformation"
-		}
-	}
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "sparkadmin-20181011132716-authRole",
+            "UnauthRoleArn": "arn:aws:iam::849422063466:role/sparkadmin-20181011132716-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::849422063466:role/sparkadmin-20181011132716-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "sparkadmin-20181011132716-deployment",
+            "UnauthRoleName": "sparkadmin-20181011132716-unauthRole",
+            "StackName": "sparkadmin-20181011132716",
+            "StackId": "arn:aws:cloudformation:us-east-1:849422063466:stack/sparkadmin-20181011132716/483d58f0-cd83-11e8-8265-50d501eed2b3"
+        }
+    },
+    "auth": {
+        "sparkadmincognito": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation",
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/sparkadmin-20181011132716-deployment/amplify-cfn-templates/auth/sparkadmincognito-cloudformation-template.yml",
+                "logicalId": "authsparkadmincognito"
+            },
+            "lastPushTimeStamp": "2018-10-12T15:42:42.325Z",
+            "output": {
+                "AppClientSecret": "8ilm22njbul6gfhq6gklqpjgb261qcelj3le76s6721gptst6cv",
+                "UserPoolId": "us-east-1_ZrB8TXsxt",
+                "AppClientIDWeb": "2a687782li4fg9nubhqd55q9o",
+                "AppClientID": "52hclf61499pl1jiud88ljslvg",
+                "UserPoolName": "sparkadminb7f35932_userpool_b7f35932"
+            }
+        }
+    },
+    "storage": {
+        "sparkdynamodb": {
+            "service": "DynamoDB",
+            "providerPlugin": "awscloudformation",
+            "providerMetadata": {
+                "s3TemplateURL": "https://s3.amazonaws.com/sparkadmin-20181011132716-deployment/amplify-cfn-templates/storage/sparkdynamodb-cloudformation-template.json",
+                "logicalId": "storagesparkdynamodb"
+            },
+            "lastPushTimeStamp": "2018-10-12T15:42:42.333Z",
+            "output": {
+                "PartitionKeyName": "GameID",
+                "SortKeyName": "GameName",
+                "SortKeyType": "S",
+                "Region": "us-east-1",
+                "Arn": "arn:aws:dynamodb:us-east-1:849422063466:table/games",
+                "PartitionKeyType": "N",
+                "Name": "games"
+            }
+        }
+    }
 }
