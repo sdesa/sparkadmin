@@ -19,14 +19,15 @@
                 "s3TemplateURL": "https://s3.amazonaws.com/sparkadmin-20181011132716-deployment/amplify-cfn-templates/auth/sparkadmincognito-cloudformation-template.yml",
                 "logicalId": "authsparkadmincognito"
             },
-            "lastPushTimeStamp": "2018-10-12T15:42:42.325Z",
+            "lastPushTimeStamp": "2018-10-13T16:24:09.264Z",
             "output": {
                 "AppClientSecret": "8ilm22njbul6gfhq6gklqpjgb261qcelj3le76s6721gptst6cv",
                 "UserPoolId": "us-east-1_ZrB8TXsxt",
                 "AppClientIDWeb": "2a687782li4fg9nubhqd55q9o",
                 "AppClientID": "52hclf61499pl1jiud88ljslvg",
                 "UserPoolName": "sparkadminb7f35932_userpool_b7f35932"
-            }
+            },
+            "[object Object]": {}
         }
     },
     "storage": {
@@ -37,7 +38,7 @@
                 "s3TemplateURL": "https://s3.amazonaws.com/sparkadmin-20181011132716-deployment/amplify-cfn-templates/storage/sparkdynamodb-cloudformation-template.json",
                 "logicalId": "storagesparkdynamodb"
             },
-            "lastPushTimeStamp": "2018-10-12T15:42:42.333Z",
+            "lastPushTimeStamp": "2018-10-13T15:59:02.755Z",
             "output": {
                 "PartitionKeyName": "GameID",
                 "SortKeyName": "GameName",

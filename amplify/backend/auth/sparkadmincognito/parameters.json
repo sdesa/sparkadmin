@@ -29,7 +29,8 @@
     "userpoolClientGenerateSecret": true,
     "userpoolClientRefreshTokenValidity": 30,
     "userpoolClientReadAttributes": [
-        "email"
+        "email",
+        "phone_number"
     ],
     "mfaLambdaRole": "sparkadmincognito_totp_lambda_role",
     "mfaLambdaLogPolicy": "sparkadmincognito_totp_lambda_log_policy",
